@@ -9,8 +9,11 @@ async function main() {
   });
 
   const response = await openai.chat.completions.create({
-    model: "gpt-4",
-    messages: [{ role: "user", content: "Hello, OpenAI!" }]
+    model: "gpt-4.1-mini",
+    messages: [{ 
+        role: "user", 
+        content: "Write a one-sentence story about coding interviews." 
+    }]
   });
 
   console.log(response.choices[0].message.content);
