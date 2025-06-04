@@ -1,0 +1,19 @@
+{
+    "name": "typescript-empty",
+    "version": "0.1.0",
+    "description": "A minimal TypeScript project with OpenAI dependency",
+    "main": "dist/index.js",
+    "scripts": {
+      "build": "tsc",
+      "start": "node dist/index.js"
+    },
+    "type": "module",
+    "dependencies": {
+      "openai": "^4.0.0"
+    },
+    "devDependencies": {
+      "typescript": "^5.3.0",
+      "@types/node": "^22.10.1",
+      "dotenv": "^16.4.7"
+    }
+  }
